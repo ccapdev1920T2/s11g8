@@ -1,1 +1,7 @@
 # s11g8
+submission by:
+BROSOTO, MIG FRANZ
+MICO, PAOLO TIMOTHY
+TEOPE, CAROL BEATRICE
+
+# BIDS TO PICK application
