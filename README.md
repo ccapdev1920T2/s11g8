@@ -40,7 +40,7 @@ localhost:9090
 * Sir Arren Antioquia, for the knowlege he gave us prior to developing the MP.
 
 ## Notes
-1) All views are complete with the current completed functionalities.
+1) All views are complete with the current completed functionalities (hbs).
 2) All routes are implemented and accessible with navigational links/buttons within the app. 
 3) Data is being loaded from the backend and could be retrieved from MongoDB database.
 4) Some functionalities are still missing: post picture, edit profile details, and searching. 
