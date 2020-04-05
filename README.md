@@ -37,4 +37,4 @@ localhost:9090
 * TEOPE, MA CAROL BEATRICE
 
 ## Acknowledgements:
-* Sir Arren Antioquia for the knowlege he gave us prior to completing the MP.
+* Sir Arren Antioquia, for the knowlege he gave us prior to developing the MP.
