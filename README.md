@@ -1,7 +1,7 @@
-# s11g8
+# BIDS TO PICK application by Group 8 (S11)
 submission by:
 BROSOTO, MIG FRANZ
 MICO, PAOLO TIMOTHY
 TEOPE, CAROL BEATRICE
 
-# BIDS TO PICK application
+
