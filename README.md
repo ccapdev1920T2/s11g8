@@ -6,6 +6,14 @@ This is Bids to Pick. An application where users can buy and sell different prod
 ## Prerequisites:
 NodeJS and MongoDB must be installed in the PC. Git is optional.
 
+## Contents
+* controllers - This folder contains files which defines callback functions for client requests.
+* models - This folder contains files for database modeling and access.
+* public - This folder contains static assets such as css, js, and image files.
+* routes - This folder contains files which describes the response of the server for each HTTP method request to a specific path in the server.
+* views - This folder contains all hbs files to be rendered when requested from the server.
+* index.js - The main entry point of the web application.
+
 ## Installing:
 1. Download zip or create clone of the repository.
 2. Open command prompt.
