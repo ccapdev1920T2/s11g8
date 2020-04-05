@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BIDS TO PICK - Profile Page</title> 
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/icomoon.css">
+    <link rel="stylesheet" href="/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+  </head>
+
+  <body>
+  
+	<header role="banner" id="fh5co-header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../home/{{email}}">Bids to Pick</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="../home/{{email}}" ><span>Home</span></a></li>
+                            <li class="active"><a href="../profile/{{email}}"><span>Profile</span></a></li>
+                            <li><a href="../login"><span>Logout</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+	<section id="fh5co-prof" style="background-color:#C0C0C0;">
+      
+        <div class="profileInfo">
+            <p style="color: whitesmoke; font-size:large; margin-bottom:3px;">user id: {{_id}}</p><img src="/images/egg.jpg"><hr>
+            <p style="color: whitesmoke; margin: 0; font-size:large;">{{fname}}</p><hr>
+            <p style="color: whitesmoke; margin: 0; font-size:medium;">email address: {{email}}</p><hr>
+            <p style="color: whitesmoke; margin: 0; font-size:medium;">contact number: {{pnumber}}</p><hr>
+            <p style="color: whitesmoke; font-size:medium;">rating: 5 / 5</p>
+            <button class = "ratebtn">Edit User</button>
+        </div>
+      
+    </section>
+
+    <div id="fh5co-footer" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 animate-box">
+                    <h3 class="section-title">Bids to Pick.</h3>
+                    <p>Bidding site for the Lasallian community. Buy, sell, meetup, and enjoy!</p>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copy-right">
+                            &copy; 2020 CCAPDEV. All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+		
+  </body>
+</html>
