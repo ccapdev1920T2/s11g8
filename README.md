@@ -26,7 +26,12 @@ npm install
 ```
 node index.js
 ```
-6. Open a web browser and type the link:
+6. If ran successfully, the following message would be displayed indicating that the application has started properly:
+```
+app listening at port 9090
+Connected to: mongodb://localhost:27017/ccapdev-group8
+```
+7. Open a web browser and type the link:
 ```
 localhost:9090
 ```
