@@ -42,7 +42,7 @@ localhost:9090
 * Sir Arren Antioquia, for the knowlege he gave us prior to developing the MP.
 
 ## Notes
-1) All views are complete with the current completed functionalities (hbs).
+1) All views are complete.
 2) All routes are implemented and accessible with navigational links/buttons within the app. 
 3) Data is being loaded from the backend and could be retrieved from MongoDB database.
-4) Some functionalities are still missing: post picture, edit profile details, and searching. 
+4) For image uploading (profile pic, cover pic, post pic), picture can only come from public/images. Images must be preplaced in public/images folder to be able to upload and show it in the site. 
