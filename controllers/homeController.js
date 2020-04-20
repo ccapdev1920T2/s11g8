@@ -11,29 +11,6 @@ const homeController = {
 		
 		db.findMany(Posts, {},function(err, results) {
 			if(results != null) {
-				
-				
-/*				var arrays = {
-					details: [
-						{	
-							itemname: results[0].itemname,
-							price: results[0].price,
-							date: results[0].date,
-							email: req.params.email,
-							_id: results[0]._id
-						},
-						{	
-							itemname: results[1].itemname,
-							price: results[1].price,
-							date: results[1].date,
-							email: req.params.email,
-							_id: results[1]._id
-						}
-					]
-				}
-				
-				res.render('home', arrays);*/
-				
 				res.render('home', {details: results, emailUser: req.params.email});
 			}
 			
@@ -51,7 +28,10 @@ const homeController = {
         var price = req.body.price;
 		var date = req.body.date;
 		var highbid = req.body.highbid;
-		var imgurl = req.body.imgurl;
+		var imgurl = '../images/' + req.body.imgurl;
+		
+		var today = new Date();
+		var datenow = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 		
 		db.insertOne(Posts, {
 			email: email,
@@ -60,10 +40,11 @@ const homeController = {
             price: price,
 			date: date,
 			highbid: highbid,
+			datenow: datenow,
 			imgurl: imgurl
         });
 		
-		db.findMany(Posts, {},function(err, results) {
+		db.findMany(Posts, {}, function(err, results) {
 			if(results != null) {
 				res.redirect('/home/' + email);
 			}
@@ -75,6 +56,4 @@ const homeController = {
 	}
 }
 
-// exports the object `controller` (defined above)
-// when another script exports from this file
 module.exports = homeController;
