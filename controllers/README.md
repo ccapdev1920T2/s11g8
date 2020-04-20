@@ -1,4 +1,4 @@
-# ccapdev-mongoose/controllers
+# s11g8 - controllers
 
 This folder contains files which defines callback functions for client requests.
 
