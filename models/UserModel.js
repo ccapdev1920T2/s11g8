@@ -1,8 +1,5 @@
-
-// import module `mongoose`
 var mongoose = require('mongoose');
 
-// defines the schema for collection `users`
 var UserSchema = new mongoose.Schema({
     fname: {
         type: String,
@@ -19,11 +16,45 @@ var UserSchema = new mongoose.Schema({
 	pnumber: {
         type: Number,
         required: true
-    }
+    },
+	rate: {
+		onestar: {
+			type: Number,
+			default: 0
+		},
+		twostar: {
+			type: Number,
+			default: 0
+		},
+		threestar: {
+			type: Number,
+			default: 0
+		},
+		fourstar: {
+			type: Number,
+			default: 0
+		},
+		fivestar: {
+			type: Number,
+			default: 0
+		},
+		ratecount: {
+			type: Number,
+			default: 0
+		},
+		rateavg: {
+			type: Number,
+			default: 0
+		}
+	},
+	profPic: {
+		type: String,
+		default: '/images/egg.jpg'
+	},
+	backPic: {
+		type: String,
+		default: '/images/gray.jpg'
+	}
 });
 
-// exports a mongoose.model object based on `UserSchema` (defined above)
-// when another script exports from this file
-// This model executes CRUD operations
-// to collection `users` -> plural of the argument `User`
 module.exports = mongoose.model('User', UserSchema);
