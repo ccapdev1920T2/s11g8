@@ -7,12 +7,12 @@ This is Bids to Pick. An application where users can buy and sell different prod
 NodeJS and MongoDB must be installed in the PC. Git is optional.
 
 ## Contents
-* controllers - This folder contains files which defines callback functions for client requests.
-* models - This folder contains files for database modeling and access.
-* public - This folder contains static assets such as css, js, and image files.
-* routes - This folder contains files which describes the response of the server for each HTTP method request to a specific path in the server.
-* views - This folder contains all hbs files to be rendered when requested from the server.
-* index.js - The main entry point of the web application.
+* [controllers](https://github.com/ccapdev1920T2/s11g8/tree/master/controllers) - This folder contains files which defines callback functions for client requests.
+* [models](https://github.com/ccapdev1920T2/s11g8/tree/master/models) - This folder contains files for database modeling and access.
+* [public](https://github.com/ccapdev1920T2/s11g8/tree/master/public) - This folder contains static assets such as css and image files.
+* [routes](https://github.com/ccapdev1920T2/s11g8/tree/master/routes) - This folder contains files which describes the response of the server for each HTTP method request to a specific path in the server.
+* [views](https://github.com/ccapdev1920T2/s11g8/tree/master/views) - This folder contains all hbs files to be rendered when requested from the server.
+* [index.js](https://github.com/ccapdev1920T2/s11g8/blob/master/index.js) - The main entry point of the web application.
 
 ## Installing
 1. Download zip or create clone of the repository.
