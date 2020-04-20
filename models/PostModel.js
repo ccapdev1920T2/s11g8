@@ -26,14 +26,14 @@ var PostSchema = new mongoose.Schema({
         type: String,
         required: false
     },
+	datenow: {
+		type: String,
+		required: false
+	},
 	imgurl: {
 		type: String,
 		required: false
 	}
 });
 
-// exports a mongoose.model object based on `UserSchema` (defined above)
-// when another script exports from this file
-// This model executes CRUD operations
-// to collection `users` -> plural of the argument `User`
 module.exports = mongoose.model('Posts', PostSchema);
