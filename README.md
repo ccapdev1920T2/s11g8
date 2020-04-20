@@ -22,7 +22,7 @@ NodeJS and MongoDB must be installed in the PC. Git is optional.
 ```
 npm install
 ```
-5. Run the following command:
+5. After running installation, run the following command:
 ```
 node index.js
 ```
