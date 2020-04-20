@@ -1,5 +1,3 @@
-## NOT FOR CHECKING!!
-
 # BIDS TO PICK application by Group 8 (S11)
 submission by: BROSOTO, MICO, TEOPE <br>
 
@@ -45,4 +43,4 @@ localhost:9090
 1) All views are complete.
 2) All routes are implemented and accessible with navigational links/buttons within the app. 
 3) Data is being loaded from the backend and could be retrieved from MongoDB database.
-4) For image uploading (profile pic, cover pic, post pic), picture can only come from public/images. Images must be preplaced in public/images folder to be able to upload and show it in the site. 
+4) For image uploading (profile pic, cover pic, post pic), picture can only come from public/images folder. Images must be preplaced in public/images folder to be able to upload and show it in the site. 
