@@ -25,15 +25,16 @@
                     <div class="navbar-header">
                         <a class="navbar-brand" href="../home/{{emailUser}}">Bids to Pick</a>
                     </div>
-
-                    <div class="wrap">
-                        <div class="search">
-                            <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                            <button type="submit" class="searchButton">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
+					
+					<a href="../search/{{emailUser}}">
+						<div class="wrap">
+							<div class="search">	
+								<button type="submit" class="searchButton">
+								<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
+					</a>
 
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
@@ -68,24 +69,25 @@
 									
 									<div class="newpost" id="producttitle">
 										<p>Starting Price</p>
-										<input type="number" name="price" id="price" placeholder="1.00" step="0.01" min="1.00" required>
+										<input type="number" name="price" id="price" placeholder="1.00" step="0.01" min="1.00" 
+                                        style="width: 10%;" required>
 									 </div>
 
 									 <div class="newpost" id="producttitle">
 										<p>End Date</p>
-										<input type="date" name="date" id="date" required>
+										<input type="date" name="date" id="date"  style="width: 25%;" required>
 									 </div>
 
 									 <span class="newpost" id="pic">
-										 <input type="file" name="file" id="file" accept="image/*">
+										 <input type="file" name="imgurl" id="imgurl" accept="image/*">
 									 </span>
 								
                             </span>
 
-                                <div class="submitbtn">
-                                    <input type="submit" style="padding:15px; margin-top: 20px; color:white; background:rgb(60,179,113)" 
-                                    id="submit" value="SUBMIT">
+                                <div class="call-to-action">
+                                    <input type="submit" id="submit" value="SUBMIT">
                                 </div>
+                                
 							</form>
                         </div>
                     </div>
@@ -114,51 +116,26 @@
         <div class="fh5co-project">
             <div class="container">
                 <div class="row">
-				
-					
-					
-						
-						
-						
-						
-						
-				{{#each details}}
-					<div class="col-md-4">
-                        <div class="fh5co-portfolio animate-box">
-                            <a href="../view/{{../emailUser}}/{{_id}}">
-                                <div class="portfolio-entry" style="background-image: url(
-								
-								
-								
-								
-								
-								);">
-                                </div>
-                                <div class="portfolio-text text-center">
-                                    <h3>{{itemname}}</h3>
-                                    <ul class="stuff">
-                                        <li>Highest Bid: {{price}}</li>
-                                        <li>Cutoff: {{date}}</li>
-                                    </ul>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-				{{/each}}
-						
-						
-						
-						
-						
-						
-					
-					
-					
+					{{#each details}}
+						<div class="col-md-4">
+							<div class="fh5co-portfolio animate-box">
+								<a href="../view/{{../emailUser}}/{{_id}}">
+									<div class="portfolio-entry" style="background-image: url({{imgurl}});">
+									</div>
+									<div class="portfolio-text text-center">
+										<h3>{{itemname}}</h3>
+										<ul class="stuff">
+											<li>Highest Bid: {{price}}</li>
+											<li>Cutoff: {{date}}</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					{{/each}}
                 </div>
             </div>
         </div>
-        
-
     </section>
 
     <div id="fh5co-footer" role="contentinfo">
