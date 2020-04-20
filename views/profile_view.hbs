@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BIDS TO PICK - Profile Page</title> 
+    <title>Bids to Pick - User Profile</title> 
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="/css/styles.css">
@@ -17,30 +17,76 @@
   </head>
 
   <body>
-  
-	<header role="banner" id="fh5co-header">
+  <header role="banner" id="fh5co-header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="javascript:history.back()">Go Back</a>
+                        <a class="navbar-brand" href="javascript:history.back()">Bids to Pick</a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="navbar-brand" href="javascript:history.back()">Go Back</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
 
-	<section id="fh5co-prof" style="background-color:#C0C0C0;">
+	<section id="fh5co-prof" style="background-image: url({{backPic}});">
       
         <div class="profileInfo">
-            <p style="color: whitesmoke; font-size:large; margin-bottom:3px;">user id: {{_id}}</p><img src="/images/egg.jpg"><hr>
+            <p style="color: whitesmoke; font-size:xx-large; margin-bottom:3px;"><br></p><img src="{{profPic}}"><hr>
             <p style="color: whitesmoke; margin: 0; font-size:large;">{{fname}}</p><hr>
-            <p style="color: whitesmoke; margin: 0; font-size:medium;">email address: {{emailUser}}</p><hr>
-            <p style="color: whitesmoke; margin: 0; font-size:medium;">contact number: {{pnumber}}</p><hr>
-            <p style="color: whitesmoke; font-size:medium;">rating: 5 / 5</p>
-            <button class = "ratebtn" onclick="ratePop()">Rate this user</button>
+            <p style="color: whitesmoke; margin: 0; font-size:medium;">Email Address: {{email}}</p><hr>
+            <p style="color: whitesmoke; margin: 0; font-size:medium;">Contact Number: {{pnumber}}</p><hr>
+            <p style="color: whitesmoke; font-size:medium;">Rating: {{rateavg}} / 5 : Out of {{ratecount}}</p>
+            <a href="/rate/{{email}}"><button class = "ratebtn">Rate User</button></a>
+            <div><p></p></div>
         </div>
       
+    </section>
+
+	<section id="fh5co-explore" data-section="explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="animate-box">Items They've Posted</h2>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 subtext animate-box">
+                            <h3>See the items they have posted for bidding.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fh5co-project">
+            <div class="container">
+                <div class="row">
+					{{#each postdetails}}
+						<div class="col-md-4">
+							<div class="fh5co-portfolio animate-box">
+								<a href="../../view/{{../email}}/{{_id}}">
+									<div class="portfolio-entry" style="background-image: url(../{{imgurl}});">
+									</div>
+									<div class="portfolio-text text-center">
+										<h3>{{itemname}}</h3>
+										<ul class="stuff">
+											<li>Highest Bid: {{price}}</li>
+											<li>Cutoff: {{date}}</li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					{{/each}}
+                </div>
+            </div>
+        </div>
     </section>
 
     <div id="fh5co-footer" role="contentinfo">
@@ -60,12 +106,6 @@
                         </p>
                     </div>
                 </div>
-		
-		<script>
-			function ratePop() {
-				alert("User have already been rated");
-			}
-		</script>
 		
   </body>
 </html>
