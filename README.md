@@ -28,13 +28,31 @@ node index.js
 ```
 6. If ran successfully, the following message would be displayed indicating that the application has started properly:
 ```
-app listening at port 9090
+app listening at port 3000
 Connected to: mongodb://localhost:27017/ccapdev-group8
 ```
 7. Open a web browser and type the link:
 ```
-localhost:9090
+localhost:3000
 ```
+## Running Tests
+* Upon accessing the application, the user will be sent to the Log-In page. The user may then opt to Log-In or Sign-Up. 
+* When signing up for a new account, the user must simply fill up the details asked in the form.
+* When logging in, the user may use the following premade accounts:
+
+|              Email              |   Password    |
+| ------------------------------- | ------------- |
+|   paolo_mico@dlsu.edu.ph        |     yeet      |
+|   lanz_ling@dlsu.edu.ph         |     reet      |
+|   ma_carol_teope@dlsu.edu.ph    |     reet      |
+|   mig_franz_brosoto@dlsu.edu.ph |     reet      |
+
+* Users who have logged in can view posts, create posts, view other profiles thru posts, rate other users, view profile, edit profile, bid on post/item, and search post/items.
+
+## Versioning
+* The members used shared Google Drive and Github for making changes in the application. 
+
+## Dependencies
 
 ## Authors
 * BROSOTO, MIG FRANZ
@@ -42,10 +60,9 @@ localhost:9090
 * TEOPE, MA CAROL BEATRICE
 
 ## Acknowledgements
-* Sir Arren Antioquia, for the knowlege he gave us prior to developing the MP.
+* Sir Arren Antioquia, for the knowlege he gave us prior to completing the MP.
 
 ## Notes
 1) All views are complete.
 2) All routes are implemented and accessible with navigational links/buttons within the app. 
 3) Data is being loaded from the backend and could be retrieved from MongoDB database.
-4) For image uploading (profile pic, cover pic, post pic), picture can only come from public/images folder. Images must be preplaced in public/images folder to be able to upload and show it in the site. 
