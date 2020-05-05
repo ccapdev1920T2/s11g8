@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const User = require('./UserModel.js');
 
-const url = 'mongodb://localhost:27017/ccapdev-group8';
+const url = 'mongodb+srv://dbUser:dbUser@cluster0-wqfod.gcp.mongodb.net/test?retryWrites=true&w=majority';
 
 const options = {
     useUnifiedTopology: true,
