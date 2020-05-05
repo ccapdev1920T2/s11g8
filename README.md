@@ -72,4 +72,4 @@ localhost:3000
 * TEOPE, MA CAROL BEATRICE
 
 ## Acknowledgements
-* Sir Arren Antioquia, for the knowlege he gave us prior to completing the Application. 
+* Sir Arren Antioquia, for the knowlege he gave us prior to completing the Application.  
