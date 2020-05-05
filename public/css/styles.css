@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(223, 223, 223);
+    font-family: "Roboto Mono", monospace;
+}
+
+#fh5co-prof{
+  text-align: center;
+}
+
+.profileInfo{
+    background-color: hsl(170, 50%, 0%, 0.5);
+    width: 25%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.profileInfo img{height: 200px; width: 200px; border-radius: 50%;}
+
+.ratebtn{
+     width: 60%;
+             padding: 10px;
+             cursor: pointer;
+             margin-top: 40px;
+             margin-left: 20%;
+             margin-right: 20%;
+             background-color:rgb(60,179,113); 
+             border: none;
+             color: white;
+             padding: 15px 32px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+}
+
+  
+
+#fh5co-header, .coverPic, .content, .footer {
+	position: relative;
+	top:75px
+}
