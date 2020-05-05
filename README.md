@@ -72,9 +72,4 @@ localhost:3000
 * TEOPE, MA CAROL BEATRICE
 
 ## Acknowledgements
-* Sir Arren Antioquia, for the knowlege he gave us prior to completing the MP.
-
-## Notes
-1) All views are complete.
-2) All routes are implemented and accessible with navigational links/buttons within the app. 
-3) Data is being loaded from the backend and could be retrieved from MongoDB database.
+* Sir Arren Antioquia, for the knowlege he gave us prior to completing the Application.
