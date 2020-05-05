@@ -35,6 +35,9 @@ Connected to: mongodb://localhost:27017/ccapdev-group8
 ```
 localhost:3000
 ```
+## Bids To Pick in Heroku
+* The app could also be accessed in Heroku thru this link:
+
 ## Running Tests
 * Upon accessing the application, the user will be sent to the Log-In page. The user may then opt to Log-In or Sign-Up. 
 * When signing up for a new account, the user must simply fill up the details asked in the form.
@@ -50,9 +53,17 @@ localhost:3000
 * Users who have logged in can view posts, create posts, view other profiles thru posts, rate other users, view profile, edit profile, bid on post/item, and search post/items.
 
 ## Versioning
-* The members used shared Google Drive and Github for making changes in the application. 
+* The members used a shared Google Drive and Github for making changes in the application. 
 
 ## Dependencies
+* bcrypt
+* express
+* express-hbs
+* express-validator
+* handlebars
+* jquery
+* MongoDB
+* Mongoose
 
 ## Authors
 * BROSOTO, MIG FRANZ
