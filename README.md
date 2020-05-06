@@ -51,7 +51,7 @@ localhost:3000
 |   mig_franz_brosoto@dlsu.edu.ph |     reet      |
 
 * Users who have logged in can view posts, create posts, view other profiles thru posts, rate other users, view profile, edit profile, bid on post/item, and search post/item.
-* By the end of the bidding deadline, the highest bidder will be eligible to avail the item. The highest bidder is shown in the post. The transaction of the product between the highest bidder and the seller will be done outside the application by any means favorable to both (email address and contact number of users may be viewed in the app which may be used for seller and buyer communication). 
+* The highest bidder is shown in every post. By the end of the bidding deadline, the highest bidder will be eligible to avail the item. The transaction of the product between the highest bidder and the seller will be done outside the application by any means favorable to both (email address and contact number of users may be viewed in the app which may be used for seller and buyer communication). 
 
 ## Versioning
 * The members used a shared Google Drive and Github for making changes in the application. 
