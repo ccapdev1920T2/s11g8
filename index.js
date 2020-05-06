@@ -27,6 +27,6 @@ app.use(function (req, res) {
 
 db.connect();
 
-app.listen(port, "0.0.0.0", function () {
-    console.log('app listening at port ' + port);
+app.listen(PORT, "0.0.0.0", function () {
+    console.log('app listening at port ' + PORT);
 });
