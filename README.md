@@ -36,7 +36,7 @@ Connected to: mongodb://localhost:27017/ccapdev-group8
 localhost:3000
 ```
 ## Bids To Pick in Heroku
-* The app could also be accessed in Heroku thru this link:
+* The app has also been deployed with Heroku. It could be accessed thru this link: https://bidstopick.herokuapp.com/
 
 ## Running Tests
 * Upon accessing the application, the user will be sent to the Log-In page. The user may then opt to Log-In or Sign-Up. 
